@@ -154,6 +154,72 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-搭建博客github-hexo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/15/搭建博客github-hexo/">搭建博客github+hexo</a>
+    </h1>
+  
+
+        
+        <a href="/2017/12/15/搭建博客github-hexo/" class="archive-article-date">
+  	<time datetime="2017-12-15T14:43:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>command commonly used:<br>hexo new “post_name”–create post or article<br>hexo new page “page_name”–create page<br>hexo generate–create static file<br>hexo server–open local web server<br>key combinations<br>hexo d -g #create deploy<br>hexo s -g #create preview</p>
+<p>The details process of blog build<br>step 1: install Node.js and hexo<br>(1) verify the installtion of node.js<br>    node -v<br>(2) download and install hexo<br>    npm install -g hexo-cli(npm install hexo-cli -g)<br>    verify: hexo -v<br>(3) initial hexo and create website homepage<br>    hexo init blog_name<br>    cd blog_name<br>    npm install<br>    hexo g #hexo generate(Explanation: generate static files, create a new folder called “public”)<br>    hexo s #hexo server (Exp: open the local web server, preview the blog. Visit blog by <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>)</p>
+<p>step 2: set theme<br>(1) install theme<br>    git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia<br>(2) enable theme<br>    set the attribution value of theme in file “_config.yml” as “yilia”<br>(3) update theme<br>    cd themes/yilia<br>    git pull<br>    hexo -s g</p>
+<p>step 3: deploy hexo to github page<br>(1) install the github extension of hexo<br>    npm install hexo-deployer-git –save<br>(2) modify the configuration file<br>    deploy:<br>      type: git<br>      repo: git@github.com:your_name/your_name.github.io.git<br>      branch: master</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/15/搭建博客github-hexo/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
