@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://highflykxf.github.io/tags/index.html</loc>
+    
+    <lastmod>2017-12-16T16:28:43.565Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://highflykxf.github.io/photos/data.json</loc>
+    
+    <lastmod>2017-12-16T16:23:17.858Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://highflykxf.github.io/2017/12/16/new-draft/</loc>
     
     <lastmod>2017-12-16T15:20:50.514Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>https://highflykxf.github.io/2017/12/15/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2github-hexo/</loc>
     
     <lastmod>2017-12-16T15:20:43.060Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://highflykxf.github.io/photos/data.json</loc>
-    
-    <lastmod>2017-12-16T10:42:50.758Z</lastmod>
     
   </url>
   
@@ -44,13 +51,6 @@
   </url>
   
   <url>
-    <loc>https://highflykxf.github.io/assets/demo/coffee_pc_demo/pro-con.html</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://highflykxf.github.io/photos/ins.json</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
@@ -58,14 +58,14 @@
   </url>
   
   <url>
-    <loc>https://highflykxf.github.io/photos/index.html</loc>
+    <loc>https://highflykxf.github.io/assets/demo/pre_css3_demo/demo.html</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://highflykxf.github.io/assets/demo/hack_demo.html</loc>
+    <loc>https://highflykxf.github.io/photos/index.html</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
@@ -80,6 +80,20 @@
   
   <url>
     <loc>https://highflykxf.github.io/assets/demo/jiugongge_demo.html</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://highflykxf.github.io/assets/demo/border1px.html</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://highflykxf.github.io/assets/demo/coffee_pc_demo/pro-con.html</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
@@ -107,14 +121,7 @@
   </url>
   
   <url>
-    <loc>https://highflykxf.github.io/assets/demo/pre_css3_demo/demo.html</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://highflykxf.github.io/assets/demo/border1px.html</loc>
+    <loc>https://highflykxf.github.io/assets/demo/hack_demo.html</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
