@@ -19,14 +19,14 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/highflykxf/blog_resources/master/entertainment/2018-3-7_blockchain.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/highflykxf/blog_resources/master/entertainment/2018-3-7_distributedstorage.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/highflykxf/blog_resources/master/entertainment/2018-3-7_block.jpg">
-<meta property="og:image" content="https://raw.githubusercontent.com/highflykxf/blog_resources/master/entertainment/2017-3-7_blockstructure.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/highflykxf/blog_resources/master/entertainment/2018-3-7_blockstructure.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/highflykxf/blog_resources/master/entertainment/2018-3-7_block-chain.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/highflykxf/blog_resources/master/entertainment/2018-3-8_difficultycoeff-1.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/highflykxf/blog_resources/master/entertainment/2018-3-8_difficultycoeff-2.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/highflykxf/blog_resources/master/entertainment/2018-3-8_fencha-2.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/highflykxf/blog_resources/master/entertainment/2017-3-8_fencha-2.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/highflykxf/blog_resources/master/entertainment/2018-3-8_blockchain-choosen.jpg">
-<meta property="og:updated_time" content="2018-03-11T04:07:49.582Z">
+<meta property="og:updated_time" content="2018-03-11T04:09:57.007Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="区块链（BlockChain）">
 <meta name="twitter:description" content="区块链入门">
@@ -223,7 +223,7 @@ var _hmt = _hmt || [];
     - 实际数据（即区块体）的哈希
     - 上一个区块的哈希
     - 。。。
-</code></pre><p><center><img src="https://raw.githubusercontent.com/highflykxf/blog_resources/master/entertainment/2017-3-7_blockstructure.jpg" alt="区块内部组成" title="区块内部组成"></center><br>    &emsp;&emsp;所谓“哈希”就是计算机可以对任意内容，计算出一个长度相同的特征值。区块链的哈希长度是256位，这就是说，不管原始内容是什么，最后都会计算出一个256位的二进制数字。而且可以保证，只要原始内容不同，对应的哈希值一定不相同（概率极低）。<br>    &emsp;&emsp;因此，就有了两个重要的推论。</p>
+</code></pre><p><center><img src="https://raw.githubusercontent.com/highflykxf/blog_resources/master/entertainment/2018-3-7_blockstructure.jpg" alt="区块内部组成" title="区块内部组成"></center><br>    &emsp;&emsp;所谓“哈希”就是计算机可以对任意内容，计算出一个长度相同的特征值。区块链的哈希长度是256位，这就是说，不管原始内容是什么，最后都会计算出一个256位的二进制数字。而且可以保证，只要原始内容不同，对应的哈希值一定不相同（概率极低）。<br>    &emsp;&emsp;因此，就有了两个重要的推论。</p>
 <pre><code>- 每个区块的哈希都是不一样的，可以通过哈希标识区块。
 - 如果区块的内容变了，它的哈希一定会变。
 </code></pre><h3 id="四、区块Hash"><a href="#四、区块Hash" class="headerlink" title="四、区块Hash"></a>四、区块Hash</h3><p>&emsp;&emsp;每个区块的哈希都是针对“区块头”计算的。也就是说，把区块头的各项特征值，按照顺序连接在一起，组成一个很长做的字符串，再对这个字符串计算哈希。区块哈希的计算公式为：<br>    <center>Hash = SHA256(Block Head)</center><br>    其中，<font color="#ADFF2F">SHA256</font>是区块链所使用的哈希算法。这个公式里面只包含区块头，不包含去块体，也就是说，哈希有区块头唯一决定。</p>
