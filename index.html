@@ -225,7 +225,7 @@ var _hmt = _hmt || [];
 <h3 id="八、难度系数的动态调节"><a href="#八、难度系数的动态调节" class="headerlink" title="八、难度系数的动态调节"></a>八、难度系数的动态调节</h3><p>&emsp;&emsp;正如上一节所说，采矿具有随机性，没法保证正好十分钟产出一个区块，有时一分钟就算出来啦，有时几个小时可能也没有结果。总体来看，随着硬件设备的提升，以及矿机的数量增长，计算速度一定会越来越快。<br>&emsp;&emsp;为了将产出速率恒定在十分钟，中本聪还设计了难度系数的动态调节机制。他规定，难度系数每两周（2016个区块）调整一次。如果这两周里面，区块的平均生成速度是9分钟，就意味着比法定速度快了10%，因此接下来的难度系数就要调高10%；如果平均生成速度是11分钟，就意味着比法定速度慢了10%，因此接下来的难度系数就要调低10%。<br>&emsp;&emsp;难度系数越调越高（目标值越来越小），导致了采矿越来越难。</p>
 <h3 id="九、区块链的分叉"><a href="#九、区块链的分叉" class="headerlink" title="九、区块链的分叉"></a>九、区块链的分叉</h3><p>&emsp;&emsp;即使区块链是可靠的，现在还有一个问题没有解决：如果两个人同时向区块链写入数据，也就是说，同时有两个区块加入，因为它们都连着前一个区块，就形成了分叉。这时应该采纳哪一个区块呢？</p>
 <p><center><img src="https://raw.githubusercontent.com/highflykxf/blog_resources/master/entertainment/2018-3-8_fencha-2.jpg" alt="分叉现象" title="分叉现象"></center><br>&emsp;&emsp;现在的规则是，新节点总是采用最长的那条区块链。如果区块链有分叉，将看哪个分支在分叉点后面，先达到6个新区块（称为”六次确认”）。按照10分钟一个区块计算，一小时就可以确认。</p>
-<p><center><img src="https://raw.githubusercontent.com/highflykxf/blog_resources/master/entertainment/2017-3-8_fencha-2.jpg" alt="正宗区块链的确定" title="正宗区块链的确定"></center><br>&emsp;&emsp;由于新区块的生成速度由计算能力决定，所以这条规则就是说，拥有大多数计算能力的那条分支，就是正宗的区块链。</p>
+<p><center><img src="https://raw.githubusercontent.com/highflykxf/blog_resources/master/entertainment/2018-3-8_fencha-2.jpg" alt="正宗区块链的确定" title="正宗区块链的确定"></center><br>&emsp;&emsp;由于新区块的生成速度由计算能力决定，所以这条规则就是说，拥有大多数计算能力的那条分支，就是正宗的区块链。</p>
 <h3 id="十、总结"><a href="#十、总结" class="headerlink" title="十、总结"></a>十、总结</h3><p>&emsp;&emsp;区块链作为无人管理的分布式数据库，从2009年开始已经运行了8年，没有出现大的问题。这证明它是可行的。<br>&emsp;&emsp;但是，为了保证数据的可靠性，区块链也有自己的代价。一是效率，数据写入区块链，最少要等待十分钟，所有节点都同步数据，则需要更多的时间；二是能耗，区块的生成需要矿工进行无数无意义的计算，这是非常耗费能源的。<br>&emsp;&emsp;因此，区块链的适用场景，其实非常有限。</p>
 <pre><code>1. 不存在所有成员都信任的管理当局；
 2. 写入的数据不要求实时使用；
@@ -410,7 +410,7 @@ var _hmt = _hmt || [];
 <blockquote>
 <p>笔落惊风雨，<br>诗成泣鬼神。</p>
 </blockquote>
-<h4 id="3-Link-amp-Email"><a href="#3-Link-amp-Email" class="headerlink" title="3. Link&amp;Email"></a>3. Link&amp;Email</h4><p>An email <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#x78;&#x69;&#x61;&#x6e;&#103;&#102;&#x65;&#x69;&#48;&#57;&#49;&#x39;&#64;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;">&#x78;&#x69;&#x61;&#x6e;&#103;&#102;&#x65;&#x69;&#48;&#57;&#49;&#x39;&#64;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;</a> link</p>
+<h4 id="3-Link-amp-Email"><a href="#3-Link-amp-Email" class="headerlink" title="3. Link&amp;Email"></a>3. Link&amp;Email</h4><p>An email <a href="&#109;&#97;&#x69;&#108;&#116;&#x6f;&#58;&#120;&#x69;&#x61;&#x6e;&#103;&#102;&#101;&#105;&#x30;&#x39;&#x31;&#57;&#x40;&#103;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;">&#120;&#x69;&#x61;&#x6e;&#103;&#102;&#101;&#105;&#x30;&#x39;&#x31;&#57;&#x40;&#103;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;</a> link</p>
 <hr>
 <p><a href="https://github.com/highflykxf" target="_blank" rel="noopener">Github</a></p>
 <hr>
@@ -749,15 +749,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">blockchain</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">技术</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">blockchain</a>
               </li>
             
             <div class="clearfix"></div>
