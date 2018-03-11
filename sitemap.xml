@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://highflykxf.github.io/photos/data.json</loc>
+    
+    <lastmod>2018-03-11T03:48:08.640Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://highflykxf.github.io/2018/03/07/%E5%8C%BA%E5%9D%97%E9%93%BE%EF%BC%88BlockChain%EF%BC%89/</loc>
     
     <lastmod>2018-03-11T03:00:47.710Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://highflykxf.github.io/photos/index.html</loc>
     
     <lastmod>2017-12-17T06:52:20.904Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://highflykxf.github.io/photos/data.json</loc>
-    
-    <lastmod>2017-12-17T06:25:58.086Z</lastmod>
     
   </url>
   
