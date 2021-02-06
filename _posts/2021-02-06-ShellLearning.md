@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Shell学习"
-date: 2021-02-06
+date: 2021-01-20
 description: "Shell学习"
 tags: 技术
 ---
@@ -84,4 +84,42 @@ done
 date +"%Y-%m-%d" #获取今天日期
 date -d"yesterday" +"%y-%m-%d" or date -d"1 days ago" +"%Y-%m-%d" #获取昨天日期
 date -d "20210108" +"%Y-%m-%d %H:%M:%S"
+```
+
+### 上游依赖检测
+<p>&emsp;&emsp;获取分析数据首先要确保上游依赖的数据表已经生成，因此在跑之前要校验一下上游表的最新分区是否有数据，如果未生成则继续等待直到依赖生成。检测方式如下，其中hive表最新分区的数据路径可以通过show create table命令在hive里面查询。</p>
+
+```
+while :
+do
+    hadoop fs -test -e /hdfs_path/table1/pt=${end_date}/_SUCCESS
+    table1=$?
+    hadoop fs -test -e /hdfs_path/table2/pt=${end_date}/_SUCCESS
+    table2=$?
+ 
+    if [[ $table1 -eq 0 && $table2 -eq 0 ]];then
+        echo "tables has generated"
+        break 2
+    else
+        echo "waiting 10min"
+        sleep 600s
+    fi
+done
+```
+
+### 分析脚本 
+<p>&emsp;&emsp;然后就可以跑生成数据的命令以及分析的脚本。</p>
+```
+hive -e "
+drop table if exists ${operator}.analyze_data_${start_date_str}_${end_date_str};
+create table ${operator}.analyze_data_${start_date_str}_${end_date_str}
+select
+    *
+from table1 inner join table2 ...
+"
+ 
+if [ $? -eq 0 ]  #[$? 就是上一条命令执行的状态码]
+then  
+    /opt/conda/bin/python3.6 analyze_code.py ${operator}.analyze_data_${start_date_str}_${end_date_str} ${start_date} ${end_date}
+fi
 ```

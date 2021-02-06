@@ -68,10 +68,6 @@ H6 :###### Header 6
 
 ### 插入一张图片
 
-打赏一个吧
-
-![](/images/payimg/weipayimg.jpg)
-
 <center><img src="https://raw.githubusercontent.com/highflykxf/blog_resources/master/entertainment/funny_1.jpg" alt="人生苦多，多coding" title="人生苦多，多coding"></center>
 
 css 的大部分语法同样可以在 markdown 上使用，但不同的渲染器渲染出来的 markdown 内容样式也不一样，下面这些链接里面有 markdown 基本语法，你也可以在下面几个平台上尝试着写一些。
