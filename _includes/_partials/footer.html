@@ -1,0 +1,28 @@
+<div class="copyright" >
+  {% assign current = site.time | date: '%Y' %}
+  {% assign since = site.since | downcase %}
+  &copy; {% if site.since and since != current %} {{ since }} - {% endif %}
+  <span itemprop="copyrightYear">{{ current }}</span>
+  <span class="with-love">
+    <i class="fa fa-{{ site.authoricon }}"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">{{ site.author }}</span>
+</div>
+{% if site.copyright %}
+<div class="powered-by">
+  {{ __.footer.powered | replace: '%s', '<a class="theme-link" href="https://jekyllrb.com">Jekyll</a>') }}
+</div>
+
+<div class="theme-info">
+  {{ __.footer.theme }} -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.{{ site.scheme }}
+  </a>
+</div>
+{% endif %}
+<div class="powered">
+  	<a class="theme-link" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img width="80px" alt="又拍云cdn" src="/assets/images/upyun_logo.png"></a>
+	<a href="http://www.beian.miit.gov.cn" target="_blank" rel="nofollow noopener noreferrer">赣ICP备20000124号</a>
+</div>
+<!-- <img style="width: 20px; height: 20px;" src="https://www.feiheseo.cn/wp-content/uploads/2018/09/2018091606182345.png" alt="备案标识" />
+<a href="#" target="_blank" rel="nofollow noopener noreferrer">赣公网安备32058202010228号</a> -->

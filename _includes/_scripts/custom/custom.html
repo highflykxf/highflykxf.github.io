@@ -1,0 +1,5 @@
+{% assign js_customs = 'src/darkmode.js' | split: ", " %}
+
+{% for custom in js_customs %}
+  <script type="text/javascript" src="{{ site.js | relative_url }}/{{ custom }}?v={{ site.version }}"></script>
+{% endfor %}

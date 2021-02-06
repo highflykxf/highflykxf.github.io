@@ -1,0 +1,44 @@
+@charset "UTF-8";
+.main{
+	background:#1f1f1f !important;	
+}
+.header-inner,.sidebar-inner,.site-meta,.content-wrap,.post-copyright,td{
+	background:#101010 !important;
+	color: #eee !important;
+
+}
+
+.highlight .code pre,.highlight .gutter pre,.highlight,.highlight td{
+	background:#eee !important;
+
+}
+.posts-expand .post-title-link{
+	color:#0078aa !important;
+}
+.darkmode-toggle--white {
+	background: #fff;
+}
+.box,.navbar-default{
+	background:#1f1f1f !important;
+
+}
+body{
+	background:#1f1f1f !important;
+	color:#eee !important;	
+}
+a,.post-nav-item a{color:#0078aa !important;}
+.collapse ul li a,.navbar-default .navbar-brand{
+	color:#337ab7 !important;
+}
+blockquote{
+	color:#c1c1c1 !important;
+}
+.site-title{
+	color:#ddd;
+}
+.friends .links-container:hover{
+		box-shadow:0 10px 10px #0078aa !important;
+}
+.layui-layer-page .layui-layer-content{
+	background: #0e3e63;
+}
