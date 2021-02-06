@@ -1,22 +1,3 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: flynn
 subtitle: 不忘初心
 description: 工作&生活
@@ -31,65 +12,6 @@ github_username:  highflykxf
 
 # 博客是否自动生成目录，false为不生成
 enableToc: true
-
-permalink: /:title/
-
-# Pagination
-paginate: 6
-paginate_path: "/page:num/"
-#archive:
-  #paginate: 10
-  #paginate_path: "/page:num/"
-#category:
-  #paginate: 10
-  #paginate_path: "/page:num/"
-#tag:
-  #paginate: 10
-  #paginate_path: "/page:num/"
-
-# Handling Reading
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "README_en.md", "vendor"]
-# Separator
-excerpt_separator: <!-- more -->
-
-# Code Highlighter
-## 'pygments' is unsupported on GitHub Pages now.
-highlighter: rouge
-highlight:
-  line_number: true
-
-#### Markdown Processors
-## 'redcarpet' is unsupported on GitHub Pages now.
-markdown: kramdown
-kramdown:
-    input: GFM
-
-# Default Attributes
-## Docs: https://jekyllrb.com/docs/configuration/#front-matter-defaults
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      comments: true
-
-# Atom feed
-feed:
-  path: atom.xml
-
-# Plugins
-## Docs: https://help.github.com/articles/configuring-jekyll-plugins/
-plugins:
- - jekyll-feed
-
-# ---------------------------------------------------------------
-# Site Information Settings
-# ---------------------------------------------------------------
-
-# Put your favicon.ico into `assets/` directory.
-favicon: /assets/favicon.ico
 
 # Build settings
 theme: minima
@@ -112,74 +34,15 @@ cover_color: clear
 blog_button:
     title: 博客主页
 
-
 # Navigation buttons in the front page.s
 nav:
-    - {title: 所有文章, description: archive, url: '/archive'}
-    - {title: 标签, description: tags, url: '/tags'}
-    - {title: 技术支持, description: support, url: '/support'}
-    - {title: 关于我, description: about, url: '/about'}
-
+    - {title: 所有文章, description: archive, url: '/archive'}   
+    - {title: 标签, description: tags, url: '/tags'}      
+    - {title: 技术支持, description: support, url: '/support'}      
+    - {title: 关于我, description: about, url: '/about'}   
+    
 
 # Pagination
 gems: [jekyll-paginate,jekyll-sitemap]
 paginate: 20
 paginate_path: "page/:num/"
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-
-# ---------------------------------------------------------------
-# Menu Settings
-# ---------------------------------------------------------------
-
-# When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
-menu:
-  home: /
-  #categories: /categories/
-  about: /about/
-  archives: /archives/
-  tags: /tags/
-  links: /links/
-  album: /album/
-  play: /play/
-  #sitemap: /sitemap.xml
-  #commonweal: /404.html
-
-
-# Enable/Disable menu icons.
-# Icon Mapping:
-#   Map a menu item to a specific FontAwesome icon name.
-#   Key is the name of menu item and value is the name of FontAwesome icon. Key is case-senstive.
-#   When an question mask icon presenting up means that the item has no mapping icon.
-menu_icons:
-  enable: true
-  #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
-  home: home
-  about: user
-  categories: th
-  schedule: calendar
-  tags: tags
-  links: link
-  album: camera-retro
-  play: hourglass-half
-  archives: archive
-  sitemap: sitemap
-  commonweal: heartbeat
