@@ -93,10 +93,6 @@
 
 ***  
 
-#### 每篇文章下面都支持打赏   
-
-![](https://leopardpan.github.io/images/readme/img3.png)
-
 #### 文章详情   
 
 ![](https://leopardpan.github.io/images/readme/img1.png)

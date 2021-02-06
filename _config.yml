@@ -13,9 +13,6 @@ github_username:  highflykxf
 # 博客是否自动生成目录，false为不生成
 enableToc: true
 
-# Build settings
-theme: minima
-
 # 百度统计
 # 使用博客模板请去掉或者更换 id
 baidu:

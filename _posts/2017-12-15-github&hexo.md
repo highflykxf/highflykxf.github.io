@@ -3,6 +3,7 @@ layout: post
 title: "搭建博客github+hexo"
 date: 2017-12-15
 description: "使用hexo和github搭建网站"
+tags: 博客
 ---
 
 
