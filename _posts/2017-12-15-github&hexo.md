@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "搭建博客github+hexo"
+title: "使用github+hexo搭建博客"
 date: 2017-12-15
-description: "使用hexo和github搭建网站"
+description: "使用github+hexo搭建博客"
 tags: 博客
 ---
 

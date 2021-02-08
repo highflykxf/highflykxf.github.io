@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Shell学习"
+title: "基于Shell写定时分析任务脚本"
 date: 2021-01-20
 description: "Shell学习"
 tags: 技术
