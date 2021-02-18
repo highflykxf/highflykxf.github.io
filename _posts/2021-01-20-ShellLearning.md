@@ -107,6 +107,7 @@ do
 done
 ```
 
+
 ### 分析脚本 
 <p>&emsp;&emsp;然后就可以跑生成数据的命令以及分析的脚本。</p>
 ```
@@ -117,9 +118,15 @@ select
     *
 from table1 inner join table2 ...
 "
- 
 if [ $? -eq 0 ]  #[$? 就是上一条命令执行的状态码]
 then  
     /opt/conda/bin/python3.6 analyze_code.py ${operator}.analyze_data_${start_date_str}_${end_date_str} ${start_date} ${end_date}
 fi
 ```
+
+### crontab定时任务配置
+<pre>
+1. 编辑crontab任务: crontab -e
+2. 启动crontab任务: sudo service crond start
+3. 查看crontab任务: crontab -l
+</pre>
