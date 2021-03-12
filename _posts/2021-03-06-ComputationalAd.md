@@ -474,3 +474,14 @@ PID 控制系统结构图:
 &emsp;&emsp;为了能够实现控制成交价的目的，我们实时监控成交价（输出）与预算成本（目标）间关系，并通过 PID 控制算法来动态调整出价，PID 反馈控制环如下图所示：
 
 <p><img src="https://static001.infoq.cn/resource/image/4c/fb/4cd203de3da7ddb1aa9201345f6e26fb.png" alt="" /></p>
+
+
+<h1>参考博客&书籍</h1>
+
+[【计算广告】我的新赛道](https://wdxtub.com/read/computer/book-007/2019/03/20/)
+
+[图论在计算广告中的应用](https://zhuanlan.zhihu.com/p/23562855)
+
+[计算广告-互联网商业变现的市场与技术](https://github.com/highflykxf/blog_resources/tree/master/books)
+
+[全景揭秘阿里文娱智能算法](https://github.com/highflykxf/blog_resources/tree/master/books)
