@@ -3,7 +3,7 @@ layout: post
 title: "基于Shell写定时分析任务脚本"
 date: 2021-01-20
 description: "Shell学习"
-tags: 技术
+tags: 技术积累
 ---
 
 <p>&emsp;&emsp;最近工作中经常要做一些实验分析的事情，每天早上坐在工位上后第一件事就是先把脚本启动起来跑数据，然后基于跑好的数据在jupyter里面分析。这种方式低效、重复性工作高，还是得写成定时任务来减少一些不必要的时间投入，也顺便把shell的一些常见使用方式熟悉一下</p>
@@ -21,7 +21,7 @@ else
     end_date=`date -d "-1 day" "+%Y-%m-%d"`
     start_date="2021-01-01"
 fi
- 
+
 start_date_str=`date -d "$start_date" +"%Y%m%d"`
 end_date_str=`date -d "$end_date" +"%Y%m%d"`
 date_month_before=`date -d "$end_date 29 day ago" +"%Y-%m-%d"`
@@ -44,15 +44,15 @@ echo $((${package_name_id_dict[$package_name]}-1))
 ### 数组
 ```
 arr=("Zhang San" "Zhao Si" "Wang Wu" "Li Liu")
- 
+
 len=${#arr}
 printf "arr length: %-4d\n" len
- 
+
 id_max1=$(($len-1))
 id_max2=$[$len-1]
 id_max=`expr $len - 1`
 printf "%d %d %d\n" id_max1 id_max2 id_max
- 
+
 idx_arr=(1 3 5)
 
 <<COMMENT
@@ -60,8 +60,8 @@ idx_arr=(1 3 5)
 #idx_arr=(1 3 5) # =两边不能有空格 使用空格分隔元素
 #echo ${idx_arr[0]},数组所有元素${idx_arr[*]},数组长度: ${#idx_arr[*]}
 COMMENT
- 
- 
+
+
 #for idx in "${idx_arr[@]}"
 for ((idx=0;idx<=${#idx_arr[*]};idx++));
 do
@@ -96,7 +96,7 @@ do
     table1=$?
     hadoop fs -test -e /hdfs_path/table2/pt=${end_date}/_SUCCESS
     table2=$?
- 
+
     if [[ $table1 -eq 0 && $table2 -eq 0 ]];then
         echo "tables has generated"
         break 2
@@ -108,7 +108,7 @@ done
 ```
 
 
-### 分析脚本 
+### 分析脚本
 <p>&emsp;&emsp;然后就可以跑生成数据的命令以及分析的脚本。</p>
 ```
 hive -e "

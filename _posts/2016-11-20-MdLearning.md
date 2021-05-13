@@ -2,7 +2,7 @@
 layout: post
 title: Markdown实践
 date: 2017-12-17
-tags: 技术
+tags: 技术积累
 ---
 
 ## 什么是 Markdown

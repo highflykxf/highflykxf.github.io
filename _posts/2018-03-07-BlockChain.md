@@ -3,7 +3,7 @@ layout: post
 title: "区块链(BlockChain)"
 date: 2018-03-07
 description: "区块链入门"
-tags: 区块链
+tags: 技术积累
 ---
 
 ![BLOCK CHAIN](https://raw.githubusercontent.com/highflykxf/blog_resources/master/entertainment/2018-3-7_blockchain.jpg)
