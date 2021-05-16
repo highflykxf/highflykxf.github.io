@@ -161,3 +161,62 @@ bool isValid(string s) {
     return st.empty();
 };
 ```
+
+### 每日温度
+
+```
+vector<int> dailyTemperatures(vector<int>& temperatures) {
+    int len = temperatures.size();
+    stack<int> pos;
+    vector<int> ans(len,0);
+    for(int i=0;i<len;i++){
+        while(!pos.empty()&&temperatures[i]>temperatures[pos.top()]){
+            ans[pos.top()] = i-pos.top();
+            pos.pop();
+        }
+        pos.push(i);
+    }
+    return ans;
+}
+```
+
+
+### 柱状图中最大的矩形
+```
+int largestRectangleArea(vector<int> &heights){
+    heights.push_back(0);
+    stack<int> st;
+    int maxArea = 0, curR = 0;
+    while(curR<heights.size()){
+        while(!st.empty()&&heights[st.top()] > heights[curR]){
+            int curHeightIdx = st.top();
+            st.pop();
+            maxArea = max(maxArea, (st.empty()?curR:(curR-st.top()-1))*heights[curHeightIdx]);
+        }
+        st.push(curR++);
+    }
+    return maxArea;
+}
+```
+
+### 最大矩形
+
+```
+int maximalRectangle(vector<vector<char>>& matrix) {
+    if(matrix.size()==0)
+        return 0;
+    int R= matrix.size(), C = matrix[0].size(), maxRect=0;
+    vector<int> height(C);
+    for(int i=0;i<R;i++){
+        for(int j=0;j<C;j++){
+            if(matrix[i][j]=='1'){
+                height[j]+=1;
+            }else{
+                height[j]=0;
+            }
+            maxRect = max(maxRect, largestRectangleArea(height));
+        }
+    }
+    return maxRect;
+}
+```

@@ -35,8 +35,8 @@ date_month_before_str=`date -d "$end_date 29 day ago" +"%Y%m%d"`
 
 ```
 declare -A package_name_id_dict
-package_name_id_dict=(["trial_member_addr_enterprise_0928"]=1 ["trial_member_addr_enterprise_1025"]=2 ["trial_member_addr_keywords_0928"]=3 ["level_a_credit_score_1009"]=4 ["high_value_estate_user_1027"]=5 ["level_a_credit_pred_1027"]=6 ["trial_member_addr_enterprise_1031"]=7 ["level_a_credit_score"]=8 ["level_a_credit_score_sec"]=9 ["trial_member_addr_enterprise"]=10 ["level_a_credit_pred_pred_ctr"]=11 ["brand_acty_sbsy_vip_pkg_brd_cloth_age"]=12 ["brand_acty_sbsy_vip_pkg_moncard"]=13 ["brand_acty_sbsy_vip_pkg_credit_pred_cvr"]=14 ["brand_acty_sbsy_vip_pkg_credit_pred_ctr_age40"]=15 ["brand_acty_sbsy_vip_pkg_rfm_high_m"]=16)
-package_name="trial_member_addr_enterprise"
+package_name_id_dict=(["key1"]=1 ["key2"]=2)
+package_name="key2"
 package_name_id=${package_name_id_dict[$package_name]}
 echo $((${package_name_id_dict[$package_name]}-1))
 ```
